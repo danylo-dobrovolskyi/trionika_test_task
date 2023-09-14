@@ -1,0 +1,20 @@
+.moderators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 120px;
+
+  &__header--title {
+    font-size: 40px;
+  }
+
+  &__photos {
+    margin-top: 25px;
+
+    img {
+      width: 458px;
+      height: 400px;
+    }
+  }
+}

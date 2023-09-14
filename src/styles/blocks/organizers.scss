@@ -1,0 +1,66 @@
+.organizers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 20%;
+    padding: 2% 5%;
+    border-top: 1px solid #fff;
+    backdrop-filter: blur(6px);
+
+    &:nth-child(2), &:nth-child(3) {
+      border-right: 1px solid #fff;
+      border-left: 1px solid #fff;
+    }
+  }
+
+  &__logo {
+    .color_logo {
+      display: none;
+    }
+
+    .silver_logo {
+      display: block;
+    }
+  }
+
+  &__link:hover {
+    .trionika {
+      background-image: url(/images/logotrio_hover.png);
+    }
+
+    .pdl {
+      background-image: url(/images/pdl-profit_hover.png);
+    }
+
+    .organizers__logo {
+      .color_logo {
+        display: block;
+      }
+
+      .silver_logo {
+        display: none;
+      }
+    }
+  }
+}
+
+.event__info--details-title {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.event__info--details-description {
+  font-size: 18px;
+  font-weight: normal;
+}

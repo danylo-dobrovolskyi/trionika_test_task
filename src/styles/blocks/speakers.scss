@@ -1,0 +1,179 @@
+.speakers {
+  margin-top: 120px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--title {
+      font-size: 40px;
+    }
+
+    &--options {
+      button {
+        border: 1px solid #E5E5E5;
+        border-radius: 11px;
+        padding: 6px 14px;
+        background-color: #fff;
+        transition: all 0.5s;
+
+        &:hover {
+          border: 1px solid #E5E5E5;
+          border-radius: 12px;
+          padding: 6px 14px;
+          background-color: #000;
+          color: #fff;
+        }
+      }
+
+      ul > li {
+        display: inline-block;
+      }
+    }
+
+    &--all {
+      button {
+        border: 1px solid #E5E5E5;
+        background-color: transparent;
+        width: 166px;
+        display: inline-block;
+        height: 60px;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          font-size: 12px;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &__main {
+    margin-top: 65px;
+
+    &--first,
+    &--second {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--card {
+      display: flex;
+      align-items: flex-end;
+      width: 320px;
+      height: 380px;
+
+      &--custom {
+        padding-left: 20px;
+
+        p {
+          color: #fff;
+          font-size: 20px;
+        }
+
+        button {
+          border: transparent;
+          border-radius: 12px;
+          padding: 5px 7px;
+          background-color: #000;
+          color: #fff;
+          margin-top: 12px;
+          margin-bottom: 24px;
+
+          &.white__button {
+            color: #000;
+            background-color: #fff;
+          }
+
+          &.red__button {
+            color: #fff;
+            background-color: red;
+          }
+
+          &.blue__button {
+            color: #fff;
+            background-color: blue;
+          }
+        }
+      }
+    }
+
+    &--first--text {
+      display: flex;
+      justify-content: center;
+
+      &.hidden {
+        display: none; /* По замовчуванню текст прихований */
+      }
+
+      p {
+        font-size: 14px;
+        color: #666;
+        margin-top: 20px;
+        width: 320px;
+      }
+    }
+
+    &--second {
+      margin-top: 32px;
+    }
+  }
+
+  &__main--button {
+    margin-top: 31px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__hidden {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .background__first {
+    background-image: url(/images/image1.png);
+  }
+
+  .background__second {
+    background-image: url(/images/image1.png);
+  }
+
+  .background__three {
+    background-image: url(/images/image2.png);
+  }
+
+  .background__four {
+    background-image: url(/images/image3.png);
+  }
+
+  .background__five {
+    background-image: url(/images/image4.png);
+  }
+
+  .background__six {
+    background-image: url(/images/image5.png);
+  }
+
+  .background__seven {
+    background-image: url(/images/image6.png);
+  }
+
+  .background__eight {
+    background-image: url(/images/image7.png);
+  }
+}
